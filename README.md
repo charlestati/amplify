@@ -1,5 +1,5 @@
 <p align="center">
-  ![Demo gif](docs/demo.gif)
+  <img src="docs/demo.gif" alt="Demo gif"/>
 </p>
 
 # Amplify
