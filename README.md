@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="docs/demo.gif" alt="Demo gif"/>
-</p>
-
 # Amplify
+
+<p align="center">
+  <img src="docs/demo.gif" alt="Demo gif">
+</p>
 
 ## Overview
 
@@ -12,7 +12,7 @@ Best used in narrow containers, between paragraphs.
 
 It is lightweight: 29 sloc of JS and 23 sloc of SCSS resulting in **1.22kB** combined.
 
-### [Demo](https://charlestati.github.io/amplify)
+### [Demo](https://charlestati.github.io/amplify/)
 
 ## Quickstart
 
