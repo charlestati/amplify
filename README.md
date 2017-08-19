@@ -1,4 +1,6 @@
-![Demo gif](docs/demo.gif)
+<p align="center">
+  ![Demo gif](docs/demo.gif)
+</p>
 
 # Amplify
 
