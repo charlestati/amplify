@@ -1,0 +1,28 @@
+.amplify-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.js-amplify[aria-expanded="false"],
+.js-amplify[aria-expanded="true"] {
+  will-change: max-width;
+  transition: max-width 0.2s ease-in-out;
+}
+
+.js-amplify[aria-expanded="false"] {
+  cursor: zoom-in;
+}
+
+.js-amplify[aria-expanded="true"] {
+  max-width: 100vw;
+  cursor: zoom-out;
+
+  @media (min-width: 576px) {
+    max-width: 95vw;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 90vw;
+  }
+}

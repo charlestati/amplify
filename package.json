@@ -1,0 +1,44 @@
+{
+  "name": "amplify",
+  "version": "1.0.0",
+  "description": "Amplify allows users to increase the size of images",
+  "scripts": {
+    "build-scripts": "babel src/amplify.js --out-file docs/amplify.js --source-maps",
+    "watch-scripts": "babel src/amplify.js --out-file docs/amplify.js --source-maps --watch",
+    "minify-scripts": "uglifyjs docs/amplify.js --compress --mangle --output docs/amplify.min.js",
+    "build-styles": "node-sass --precision 10 --source-map true src/amplify.scss docs/amplify.css",
+    "watch-styles": "node-sass --precision 10 --source-map true src/amplify.scss docs/amplify.css --watch",
+    "minify-styles": "postcss --no-map docs/amplify.css --use autoprefixer --autoprefixer.browsers 'last 2 versions' --use cssnano --output docs/amplify.min.css",
+    "serve": "browser-sync start --server 'docs/' --files 'docs/' --no-ghost-mode --no-notify --no-open",
+    "build": "npm-run-all --parallel build-scripts build-styles --parallel minify-scripts minify-styles",
+    "dev": "npm-run-all build-styles --parallel watch-scripts watch-styles serve",
+    "lint": "eslint --fix src/amplify.js",
+    "test": "eslint src/amplify.js",
+    "start": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlestati/amplify.git"
+  },
+  "author": "Charles Tatibouet",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/charlestati/amplify/issues"
+  },
+  "homepage": "https://github.com/charlestati/amplify#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.4.1",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.1.0",
+    "prettier": "^1.5.3",
+    "uglify-js": "^3.0.27"
+  }
+}
