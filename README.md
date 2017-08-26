@@ -37,6 +37,7 @@ Probably Edge, Internet Explorer 10+ and Opera too.
 ## Todo
 
 - Use `transform: scale()` or JavaScript for smoother transitions
+- Find a better naming system as `.js-*` in CSS is not ideal
 
 ## License
 
