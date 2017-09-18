@@ -6,7 +6,8 @@
 .js-amplify[aria-expanded="false"],
 .js-amplify[aria-expanded="true"] {
   will-change: max-width;
-  transition: max-width 0.2s ease-in-out; }
+  transition: max-width 0.2s ease-in-out;
+  flex: 0 0 auto; }
 
 .js-amplify[aria-expanded="false"] {
   cursor: zoom-in; }
