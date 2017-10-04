@@ -2,6 +2,7 @@
   "name": "amplify",
   "version": "1.0.0",
   "description": "Amplify allows users to increase the size of images",
+  "main": "src/amplify.js",
   "scripts": {
     "build-scripts": "babel src/amplify.js --out-file docs/amplify.js --source-maps",
     "watch-scripts": "babel src/amplify.js --out-file docs/amplify.js --source-maps --watch",
